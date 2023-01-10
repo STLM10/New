@@ -22,7 +22,7 @@ if st.button('check'):
 #     st.write(img1)
     img1 = img1 / 255.0
     st.write(img1.shape)
-    img1 = img1.resize((50,50,1))
+    img1 = img1.flatten()
     st.write(img1)
 #     img1 = np.array(img1)
 #     img1 = img1.reshape((1,2500))
