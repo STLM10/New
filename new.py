@@ -23,6 +23,7 @@ if st.button('check'):
     img1 = img1 / 255.0
     st.write(img1.shape)
     img1 = img1.flatten()
+    img2 = img1.reshape(-1,1)
 #     img1 = np.array(img1)
 #     img1 = img1.reshape((1,2500))
     a=model.predict(img1)
