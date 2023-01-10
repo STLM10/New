@@ -16,11 +16,11 @@ if st.button('check'):
     image = load_img(uploaded_file, grayscale=True, target_size=(50,50))
     #img = rgb_to_grayscale(image)
     img = img_to_array(image)
-    img = np.array(img)
-    img = img / 255.0
-    img = img.resize((50,50))
-    img1 = img.reshape(1,2500)
-    a=model.predict(img)
+    img1 = np.array(img)
+    img1 = img1 / 255.0
+    img1 = img1.resize((50,50))
+    img1 = img1.reshape(1,2500)
+    a=model.predict(img1)
     if a<0.5:
         st.text('cat')
     else:
