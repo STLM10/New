@@ -14,6 +14,7 @@ uploaded_file = st.file_uploader('Drop the image')
 
 if st.button('check'):
     image = load_img(uploaded_file, grayscale=True, target_size=(50,50,1))
+    st.write(image)
     #img = rgb_to_grayscale(image)
     img = img_to_array(image)
     img1 = np.asarray(img)
