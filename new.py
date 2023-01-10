@@ -16,7 +16,7 @@ if st.button('check'):
     image = load_img(uploaded_file, grayscale=True, target_size=(50,50))
     #img = rgb_to_grayscale(image)
     img = img_to_array(image)
-    img1 = np.array([img])
+    img1 = np.asarray([img])
     img1 = img1 / 255.0
     img1 = img1.resize((50,50))
     img1 = img1.reshape(1,2500)
