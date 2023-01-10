@@ -21,7 +21,7 @@ if st.button('check'):
     img1 = np.asarray(img)
 #     st.write(img1)
     img1 = img1 / 255.0
-    st.write(ndim(img1))
+    st.write(img1.shape)
     img1 = img1.resize((50,50,1))
     st.write(img1)
 #     img1 = np.array(img1)
