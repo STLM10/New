@@ -19,7 +19,7 @@ if st.button('check'):
     img = np.array(img)
     img = img / 255.0
     img = img.resize((50,50))
-    img.flatten()
+    img1 = img.reshape(1,2500)
     a=model.predict(img)
     if a<0.5:
         st.text('cat')
