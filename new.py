@@ -1,5 +1,3 @@
-from io import StringIO
-
 import streamlit as st
 from tensorflow.keras.preprocessing.image import load_img
 from tensorflow.keras.preprocessing.image import img_to_array
