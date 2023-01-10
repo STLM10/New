@@ -1,5 +1,5 @@
+streamlit
 tensorflow
 pickle
 numpy
-streamlit
 protobuf==3.20.1
