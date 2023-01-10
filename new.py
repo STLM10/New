@@ -17,10 +17,11 @@ if st.button('check'):
     st.write(image)
     #img = rgb_to_grayscale(image)
     img = img_to_array(image)
-    st.write(img)
+#     st.write(img)
     img1 = np.asarray(img)
-    st.write(img1)
+#     st.write(img1)
     img1 = img1 / 255.0
+    st.write(img1)
     img1 = img1.resize((50,50,1))
     st.write(img1)
 #     img1 = np.array(img1)
