@@ -19,10 +19,11 @@ if st.button('check'):
     img1 = np.asarray(img)
     img1 = img1 / 255.0
     img1 = img1.resize((50,50))
-    img1 = np.array(img1)
-    img1 = img1.reshape((1,2500))
-    a=model.predict(img1)
-    if a<0.5:
-        st.text('cat')
-    else:
-        st.text('dog')
+    st.write(img1)
+#     img1 = np.array(img1)
+#     img1 = img1.reshape((1,2500))
+#     a=model.predict(img1)
+#     if a<0.5:
+#         st.text('cat')
+#     else:
+#         st.text('dog')
