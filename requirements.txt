@@ -3,3 +3,5 @@ tensorflow
 numpy
 pickl
 protobuf==3.20.1
+pickleshare
+scikit-learn
