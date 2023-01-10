@@ -13,7 +13,7 @@ uploaded_file = st.file_uploader('Drop the image')
 
 
 if st.button('check'):
-    image = load_img(uploaded_file, target_size=(50,50,3))
+    image = load_img(uploaded_file, grayscale=True, target_size=(50,50))
     #img = rgb_to_grayscale(image)
     img = img_to_array(image)
     img = np.array(img)
